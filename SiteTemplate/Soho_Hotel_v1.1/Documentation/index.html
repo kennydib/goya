@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Soho Hotel Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Soho Hotel&rdquo; Documentation by &ldquo;Quite Nice Stuff&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Soho Hotel&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 03/08/2013<br>
+					By: Quite Nice Stuff<br>
+					Email: <a href="mailto:help@quitenicestuff.com">help@quitenicestuff.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/quitenicestuff">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This template is a responsive layout with two columns. The main content area has the class "main-content" (two thirds of the page area) and the sidebar area has the class "sidebar" (one third of the page area).</p>
+		
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+		<br /><br />
+		
+		<p>There are 2 primary fonts used in this template "Merriweather" for titles and "Open Sans" for all other text. If you want to change them go to lines 161 and 165 in the "style.css" file. Note both are Google fonts, if you want to change to a different Google font don't forget to import it in the HTML head tags (see line 24/25 of any HTML file in this package)</p>
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>There is one main CSS file which is stored in the "css" directory named "style.css", this contains all the main CSS code. There are 5 other CSS files used for the slideshow, photo lightbox, drop down menu, responsive and colours also found in the "css" directory.</p>
+		
+		<h4><strong>B1) Colours</strong></h4>
+		<p>There are 4 colour schemes packaged with Soho Hotel which can be found in "HTML/css/colours". To change the colour open any HTML file and edit line 19.</p>
+
+		<p>The main CSS file "style.css" is fairly well documented in the file, the basic structure is like this:</p>  
+
+<pre>
+1.0 - Global
+2.0 - Header
+	2.1 - Top Bar
+		2.1.1 - Contact
+		2.1.2 - Language Selection
+		2.1.3 - Google Map
+		2.1.4 - Button
+3.0 - Navigation
+	3.1 - Mobile Menu
+4.0 - Slideshows
+	4.1 - Text Slideshow
+	4.2 - Accommodation Slideshow
+5.0 - Typography
+	5.1 - Lists
+	5.2 - Forms
+	5.3 - Buttons
+	5.4 - Tables
+	5.5 - Alerts &amp; Messages
+	5.6 - Other
+6.0 - JS Elements
+	6.1 - Accordion
+	6.2 - Toggle
+	6.3 - Tabs
+7.0 - Content
+	7.1 - Blog / Events
+		7.1.1 - Comments
+	7.2 - Booking
+		7.2.1 - Home / Slider Booking Form
+		7.2.2 - Booking Calendar
+		7.2.3 - Open Booking Calendar
+		7.2.4 - Booking Widget
+		7.2.5 - Booking Contact Info
+		7.2.6 - Booking Steps
+		7.2.7 - Lightbox
+	7.3 - Accommodation
+		7.3.1 - Accommodation Price Widget
+	7.4 - Testimonials
+	7.5 - Pagination
+8.0 - Columns 
+	8.1 - One Half
+	8.2 - One Third
+	8.3 - One Fourth
+9.0 - Widgets
+	9.1 - Social Widget
+	9.2 - Flickr
+	9.3 - Tags
+	9.4 - Latest Posts Widget
+10.0 - Footer
+	10.1 - Footer Bottom
+11.0 - IE Fixes
+</pre>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports 8 Javascript files.</p>
+		
+		<ol>
+			<li>jQuery</li>
+			<li>jQuery UI</li>
+			<li>prettyPhoto (photo gallery lightbox)</li>
+			<li>Superfish (main menu drop down)</li>
+			<li>Flexslider (homepage slideshow)</li>
+			<li>Selectivizr (CSS3 for IE6 - 8)</li>
+			<li>All custom JS code is stored in scripts.js</li>
+		</ol>
+		  
+		<p>The only JS file you're likely to need to edit if any is "scripts.js", for example if you want to edit the drop down menu, slideshow or prettyPhoto lightbox settings.</p>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>D) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Thanks to everyone listed below for providing awesome resources.
+		
+			<ul>
+				<li><a href="http://www.jquery.com">jQuery</a></li>
+				<li><a href="http://www.no-margin-for-errors.com">prettyPhoto by Stephane Caron</a></li>
+				<li><a href="http://users.tpg.com.au/j_birch/plugins/superfish">Superfish by Joel Birch</a></li>
+				<li><a href="http://www.woothemes.com/flexslider">Flexslider by WooThemes</a></li>	
+				<li><a href="http://selectivizr.com">Selectivizr by Keith Clark</a></li>
+				<li><a href="http://www.google.com/fonts/specimen/Merriweather">Merriweather by Eben Sorkin</a></li>
+				<li><a href="http://www.google.com/webfonts/specimen/Open+Sans">Open Sans Font by Steve Matteson</a></li>
+				<li><a href="http://thenounproject.com/noun/telephone/#icon-No127">Telephone by Unknown Designer, from The Noun Project</a></li>
+			</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Quite Nice Stuff</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
